@@ -221,3 +221,13 @@ function limpaTexto() {
 function clicaFora() {
     document.body.style.backgroundColor = "blue";
 }
+
+function teclaAtrasada() {
+    let input = document.getElementById("teclaAtrasada").value;
+    console.log(input);
+}
+
+function teclaPressionada() {
+    let input = document.getElementById("teclaPressionada").value;
+    console.log(input);
+}
