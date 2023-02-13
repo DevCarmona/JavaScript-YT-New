@@ -185,3 +185,39 @@ console.log(carro.completo());
 
     // * Eventos *
 /* */
+function eventoClick() {
+    alert('Acionou um evento de click');
+    document.body.style.backgroundColor = "blue";
+}
+
+function eventoDblClick() {
+    alert('Evento de clique duplo')
+}
+
+function viraVermelho() {
+    let div = document.getElementById("mouse-hover");
+    div.style.backgroundColor = "red";
+}
+
+function viraAzul() {
+    let div = document.getElementById("mouse-hover");
+    div.style.backgroundColor = "blue";
+}
+
+function adicionaTexto() {
+    let p = document.getElementById("texto");
+    //p.append('O Mouse moveu!');
+}
+
+function campoFocado() {
+    let input = document.getElementById("campoFocado");
+    console.log('Campo focado');
+}
+
+function limpaTexto() {
+    document.getElementById("campoTexto").value = "";
+}
+
+function clicaFora() {
+    document.body.style.backgroundColor = "blue";
+}

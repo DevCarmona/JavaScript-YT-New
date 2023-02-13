@@ -12,13 +12,28 @@
 <body>    
     <h1>JavaScript</h1>
     <p id="texto"></p>
-    <button onclick="alertaHello()">Clique Aqui</button>
-    <p>
-        <script>
-            //document.write(5+5);
-        </script>
-    </p>
-    
+    <button onclick="eventoClick()">Evento Clique</button>
+    <br><br>
+    <button ondblclick="eventoDblClick()">Clique Duplo</button>
+    <br><br>
+    <select onchange="mudou()" id="itens">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+        <option value="4">Valor 4</option>
+    </select>
+    <br><br>
+    <div id="mouse-hover" onmousemove="adicionaTexto()" onmouseout="viraAzul()" onmouseover="viraVermelho()" style="margin: auto auto; width: 80%; height: 200px; background: blue;"></div>
+    <br><br>
+    <input onfocus="campoFocado()" id="campoFocado" style="padding: 80px; font-size: 40px;" type="text
+    " placeholder="Digite alguma coisa" value="Já vem com texto, campo focado">
+    <br><br>
+    <input onfocus="limpaTexto()" id="campoTexto" style="padding: 80px; font-size: 40px;" type="text
+    " placeholder="Digite alguma coisa" value="Já vem com texto, limpa texto">
+    <br><br>
+    <input onblur="clicaFora()" id="campoFora" style="padding: 80px; font-size: 40px;" type="text
+    " placeholder="Digite alguma coisa" value="Já vem com texto, limpa texto">
+
     <script src="js/index.js"></script>
 </body>
 </html>
