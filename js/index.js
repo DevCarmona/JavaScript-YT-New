@@ -248,12 +248,24 @@ let x = lista[1];
 console.log(lista);
 
 const pessoa = ["Andre", "Carmona", 30, "Professor"]; // Array(Matriz)
-pessoa.push("Brasileiro"); // push - adiciona um item no final da lista.
 pessoa[pessoa.length] = "Solteiro" // Adiciona um item no final da lista.
-const Pessoa = {nome:"Jorge", sobrenome:"Carmona", idade:30}; // Objeto
+pessoa.push("Brasileiro"); // push - Adiciona um item no final da lista.
+pessoa.unshift("Inicio"); // unshift - Adiciona um item no começo da lista.
+pessoa.pop(); // pop - Remove o ultimo item da matriz.
+pessoa.shift(); // shift - Remove o primeiro item da matriz.
+delete pessoa[0]; // - Remove o item q vc quer sem alterar as posições.
+pessoa.splice(1, 0, "Item adicionado 1", "Item adicionado 2"); // splice(posicao do item, qnts itens removidos, itens adicionados) Adicionar itens.
 
-console.log(Pessoa.nome); // Objeto
-console.log(pessoa[0]); // Array
+const Pessoa = {nome:"Jorge", sobrenome:"Carmona", idade:30}; // Objeto.
 
-console.log(pessoa.length); // length - mostra o q existe dentro da matriz em número
-console.log(pessoa[pessoa.length - 1]); // Pegar o ultimo item da lista
+// Metodo Join - Troca o separador dos itens.
+document.getElementById("teste").innerHTML = pessoa.join(" | ");
+
+// Como descobrir se a variável é uma array (matriz).
+console.log(Array.isArray(pessoa)); // Se for array, ele retorna como TRUE.
+
+console.log(Pessoa.nome); // Objeto.
+console.log(pessoa[0]); // Array.
+
+console.log(pessoa.length); // length - mostra o q existe dentro da matriz em número.
+console.log(pessoa[pessoa.length - 1]); // Pegar o ultimo item da lista.
