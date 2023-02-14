@@ -9,7 +9,7 @@
     
     <title>JS</title>
 </head>
-<body>    
+<body onresize="console.log('Houve um redimencionamento')">    
     <h1>JavaScript</h1>
     <p id="texto"></p>
     <button onclick="eventoClick()">Evento Clique</button>
@@ -23,20 +23,21 @@
         <option value="4">Valor 4</option>
     </select>
     <br><br>
-    <div id="mouse-hover" onmousemove="adicionaTexto()" onmouseout="viraAzul()" onmouseover="viraVermelho()" style="margin: auto auto; width: 80%; height: 200px; background: blue;"></div>
+    <!-- * Eventos * -->
+    <!-- <div id="mouse-hover" onmousemove="adicionaTexto()" onmouseout="viraAzul()" onmouseover="viraVermelho()" style="margin: auto auto; width: 80%; height: 200px; background: blue;">onmousemove</div>
     <br><br>
     <input onfocus="campoFocado()" id="campoFocado" style="padding: 80px; font-size: 40px;" type="text
-    " placeholder="Digite alguma coisa" value="Já vem com texto, campo focado">
-    <br><br>
-    <input onfocus="limpaTexto()" id="campoTexto" style="padding: 80px; font-size: 40px;" type="text
-    " placeholder="Digite alguma coisa" value="Já vem com texto, limpa texto">
+    " placeholder="Digite alguma coisa" value="onfocus">
     <br><br>
     <input onblur="clicaFora()" id="campoFora" style="padding: 80px; font-size: 40px;" type="text
-    " placeholder="Digite alguma coisa" value="Já vem com texto, limpa texto">
+    " placeholder="Digite alguma coisa" value="onblur">
     <br><br>
-    <input onkeypress="teclaAtrasada()" id="teclaAtrasada" style="padding: 80px; font-size: 40px;" type="text" placeholder="Digite alguma coisa">
+    <input onkeypress="teclaAtrasada()" id="teclaAtrasada" style="padding: 80px; font-size: 40px;" type="text" placeholder="onkeypress">
     <br><br>
-    <input onkeydown="teclaPressionada()" id="teclaPressionada" style="padding: 80px; font-size: 40px;" type="text" placeholder="Digite alguma coisa">
+    <input onkeydown="teclaPressionada()" id="teclaPressionada" style="padding: 80px; font-size: 40px;" type="text" placeholder="onkeydown">
+    <br><br>
+    <input onkeyup="teclaSoltar()" id="teclaSoltar" style="padding: 80px; font-size: 40px;" type="text" placeholder="onkeyup">
+    <br><br> -->
 
     <script src="js/index.js"></script>
 </body>

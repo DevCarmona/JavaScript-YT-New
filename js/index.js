@@ -184,7 +184,7 @@ console.log(carro.completo());
 */
 
     // * Eventos *
-/* */
+/*
 function eventoClick() {
     alert('Acionou um evento de click');
     document.body.style.backgroundColor = "blue";
@@ -231,3 +231,29 @@ function teclaPressionada() {
     let input = document.getElementById("teclaPressionada").value;
     console.log(input);
 }
+
+function teclaSoltar() {
+    let input = document.getElementById("teclaSoltar").value;
+    console.log(input);
+}
+*/
+
+    // * Array (Matrizes) * 
+/* */
+const lista = ["arroz", "feijão", "macarrão", "leite"];
+//atribuindo um novo valor
+lista[1] = "Bolo";
+
+let x = lista[1];
+console.log(lista);
+
+const pessoa = ["Andre", "Carmona", 30, "Professor"]; // Array(Matriz)
+pessoa.push("Brasileiro"); // push - adiciona um item no final da lista.
+pessoa[pessoa.length] = "Solteiro" // Adiciona um item no final da lista.
+const Pessoa = {nome:"Jorge", sobrenome:"Carmona", idade:30}; // Objeto
+
+console.log(Pessoa.nome); // Objeto
+console.log(pessoa[0]); // Array
+
+console.log(pessoa.length); // length - mostra o q existe dentro da matriz em número
+console.log(pessoa[pessoa.length - 1]); // Pegar o ultimo item da lista
