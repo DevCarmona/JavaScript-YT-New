@@ -313,7 +313,6 @@ console.log(pessoa[pessoa.length - 1]); // Pegar o ultimo item da lista.
 */
 
     // * IF E ELSE *
-
 /*
 var interruptor = "off";
 if (interruptor == "on") {
@@ -348,7 +347,7 @@ function verificarNome() {
 */
 
     // * Switch *
-/* */
+/*
 function verificarCor() {
     let cor = document.getElementById("cor").value;
     cor = cor.toLowerCase(); // transforma o texto todo em minusculo
@@ -369,4 +368,51 @@ function verificarCor() {
         default:
         document.getElementById("texto11").innerHTML = "<b>Nenhuma cor disponivel para: </b>" + cor;
     }
+}
+
+function diaDaSemana() {
+    var dia = new Date().getDay();
+    switch(dia) {
+        case 0:
+            document.getElementById("texto12").innerHTML = "Domingo";
+            break;
+        case 1:
+            document.getElementById("texto12").innerHTML = "Segunda";
+            break;
+        case 2:
+            document.getElementById("texto12").innerHTML = "Terça";
+            break;
+        case 3:
+            document.getElementById("texto12").innerHTML = "Quarta";
+            break;
+        case 4:
+            document.getElementById("texto12").innerHTML = "Quinta";
+            break;
+        case 5:
+            document.getElementById("texto12").innerHTML = "Sexta";
+            break;
+        case 6:
+            document.getElementById("texto12").innerHTML = "Sábado";
+            break;
+        default:
+            document.getElementById("texto12").innerHTML = "N sei que dia é..."
+    }
+}
+*/
+
+    // * LAÇO DE REPETIÇÃO FOR *
+/* */
+for (let i = 0; i <= 10; i++) {
+    //document.getElementById("texto12").innerHTML += i + "<br>";
+}
+
+var ano = new Date().getFullYear(); // Trás o ano corrente
+for(let i = ano; i >= 1900; i--) {
+    document.getElementById("ano").innerHTML += "<option value = '" + i + "'>" + i + "<option>";
+}
+
+const carros = ["Gol", " Fusca", " Celta", " Palio"]
+var tamanho = carros.length;
+for(let i = 0; i < tamanho; i++) {
+    document.getElementById("texto13").innerHTML += carros[i] + " - "; 
 }
