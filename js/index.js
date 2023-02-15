@@ -351,6 +351,7 @@ function verificarNome() {
 /* */
 function verificarCor() {
     let cor = document.getElementById("cor").value;
+    cor = cor.toLowerCase(); // transforma o texto todo em minusculo
 
     switch(cor) {
         case "azul":
