@@ -256,11 +256,31 @@ pessoa.shift(); // shift - Remove o primeiro item da matriz.
 delete pessoa[0]; // - Remove o item q vc quer sem alterar as posições.
 pessoa.splice(1, 0, "Item adicionado 1", "Item adicionado 2"); // splice(posicao do item, qnts itens removidos, itens adicionados) Adicionar itens.
 
+document.getElementById("teste").innerHTML = pessoa.join(" | "); // Metodo Join - Troca o separador dos itens.
+
+const lista1 = ["Arroz", " Feijão", " Leite", " Macarrao"]; // Array
+const lista2 = [" Suco", " Refri", " Carne"]; // Array
+const lista3 = [" Salgadinho", " Bolacha", " Ovo"]; // Array
+const superLista = lista1.concat(lista2, lista3); // metodo concat - Juntar listas
+document.getElementById("texto").innerHTML = superLista.join("/"); // Metodo Join - Troca o separador dos itens.
+
+const jogadores = ["Firmino","Gaucho", "Fenomeno", "Messi", "Neymar", "CR7","Vampeta"]; // Array
+jogadores.sort();
+jogadores.reverse(); // reverse - Ordem alfabética decrescente
+document.getElementById("texto1").innerHTML = jogadores;
+const craques = jogadores.slice(1,5); // metodo slice - Mostra a partir da posição que vc definiu.
+const jogOrdem = jogadores.sort(); // metodo sort() - Em ordem alfabetica
+document.getElementById("texto3").innerHTML = jogOrdem;
+document.getElementById("texto2").innerHTML = craques;
+
+const numeros = [40, 100, 1, 5, 25, 10];
+numeros.sort(function (a,b) {return a-b}); // em ordem numérica crescente
+document.getElementById("texto4").innerHTML = numeros;
+numeros.sort(function (a,b) {return b-a}); // em ordem numérica decrescente
+document.getElementById("texto5").innerHTML = numeros;
+
+
 const Pessoa = {nome:"Jorge", sobrenome:"Carmona", idade:30}; // Objeto.
-
-// Metodo Join - Troca o separador dos itens.
-document.getElementById("teste").innerHTML = pessoa.join(" | ");
-
 // Como descobrir se a variável é uma array (matriz).
 console.log(Array.isArray(pessoa)); // Se for array, ele retorna como TRUE.
 
@@ -269,3 +289,4 @@ console.log(pessoa[0]); // Array.
 
 console.log(pessoa.length); // length - mostra o q existe dentro da matriz em número.
 console.log(pessoa[pessoa.length - 1]); // Pegar o ultimo item da lista.
+
