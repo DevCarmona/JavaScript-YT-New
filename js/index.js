@@ -273,11 +273,32 @@ const jogOrdem = jogadores.sort(); // metodo sort() - Em ordem alfabetica
 document.getElementById("texto3").innerHTML = jogOrdem;
 document.getElementById("texto2").innerHTML = craques;
 
-const numeros = [40, 100, 1, 5, 25, 10];
+const numeros = [40, 100, 5, 25, 10];
 numeros.sort(function (a,b) {return a-b}); // em ordem numérica crescente
 document.getElementById("texto4").innerHTML = numeros;
 numeros.sort(function (a,b) {return b-a}); // em ordem numérica decrescente
 document.getElementById("texto5").innerHTML = numeros;
+
+const numeros1 = [40, 100, 5, 25, 10];
+// Pega o Maior número
+function MaiorNumero(array) {
+    return Math.max.apply(null, array);
+}
+document.getElementById("texto6").innerHTML = MaiorNumero(numeros1);
+// Pega o Menor número
+function MenorNumero(array) {
+    return Math.min.apply(null, array);
+}
+document.getElementById("texto7").innerHTML = MenorNumero(numeros1);
+
+const numeros2 = [40, 100, 5, 25, 10];
+// Numeros maiores que 20
+const maior20 = numeros2.filter(filtragem);
+function filtragem(value, index, array) {
+    return value > 20;
+}
+maior20.sort(function (a,b) {return b-a}); // em ordem numérica decrescente
+document.getElementById("texto8").innerHTML = maior20;
 
 
 const Pessoa = {nome:"Jorge", sobrenome:"Carmona", idade:30}; // Objeto.
