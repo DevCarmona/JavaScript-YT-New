@@ -401,7 +401,7 @@ function diaDaSemana() {
 */
 
     // * LAÇO DE REPETIÇÃO FOR *
-/* */
+/*
 for (let i = 0; i <= 10; i++) {
     //document.getElementById("texto12").innerHTML += i + "<br>";
 }
@@ -416,3 +416,4 @@ var tamanho = carros.length;
 for(let i = 0; i < tamanho; i++) {
     document.getElementById("texto13").innerHTML += carros[i] + " - "; 
 }
+*/
