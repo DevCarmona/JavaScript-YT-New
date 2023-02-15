@@ -239,7 +239,7 @@ function teclaSoltar() {
 */
 
     // * Array (Matrizes) * 
-/* */
+/*
 const lista = ["arroz", "feijão", "macarrão", "leite"];
 //atribuindo um novo valor
 lista[1] = "Bolo";
@@ -310,4 +310,62 @@ console.log(pessoa[0]); // Array.
 
 console.log(pessoa.length); // length - mostra o q existe dentro da matriz em número.
 console.log(pessoa[pessoa.length - 1]); // Pegar o ultimo item da lista.
+*/
 
+    // * IF E ELSE *
+
+/*
+var interruptor = "off";
+if (interruptor == "on") {
+    //alert('A lampada está ligada');
+}else {
+    //alert('A lampada está desligada');
+}
+
+var hora = new Date().getHours();
+if (hora < 12) {
+   // alert('Bom dia');
+}else if (hora < 18) {
+   // alert('Boa tarde');
+}else {
+   // alert('Boa Noite');
+}
+
+function verificarNome() {
+    let nome = document.getElementById("nome").value; // value - pegar o valor do campo
+    if (nome == "" || nome == null) {
+        let p = document.getElementById("texto10");
+        p.innerHTML = "<b>O campo não pode ser vazio</b>";
+        p.style.color = "red";
+        // document.getElementById("texto10").innerHTML = "O campo nao pode ser vazio";
+        // texto10.style.color = "red";
+    }else {
+        let p = document.getElementById("texto10");
+        p.innerHTML = "Parabens, campo <b>NOME</b> preenchido com sucesso";
+        p.style.color = "green";
+    }
+}
+*/
+
+    // * Switch *
+/* */
+function verificarCor() {
+    let cor = document.getElementById("cor").value;
+
+    switch(cor) {
+        case "azul":
+            document.body.style.backgroundColor = "blue";
+            break;
+        case "vermelho":
+            document.body.style.backgroundColor = "red";
+            break;
+        case "amarelo":
+            document.body.style.backgroundColor = "yellow";
+            break;
+        case "padrao":
+            document.body.style.backgroundColor = "goldenrod";
+            break;
+        default:
+        document.getElementById("texto11").innerHTML = "<b>Nenhuma cor disponivel para: </b>" + cor;
+    }
+}
