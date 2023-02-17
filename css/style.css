@@ -6,3 +6,11 @@ body {
 h1 {
     color: aliceblue;
 }
+
+pre {
+    text-align: start;
+}
+
+p {
+    text-align: start;
+}
