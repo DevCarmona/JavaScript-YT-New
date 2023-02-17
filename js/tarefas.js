@@ -54,7 +54,7 @@ function marcarTarefa(id) {
         item.classList.remove('clicado');
 
         var icone = document.getElementById('icone_' + id);
-        icone.classList.remove('mdi-check-outline');
+        icone.classList.remove('mdi-check-circle');
         icone.classList.add('mdi-circle-outline');
     }
 }
